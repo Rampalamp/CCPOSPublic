@@ -1,0 +1,7 @@
+C:\Users\TheWineBar\Documents\GitHub\CCPOS\CCPOS\WineBarSSDBackUp\bin\Debug\WineBarSSDBackUp.exe.config
+C:\Users\TheWineBar\Documents\GitHub\CCPOS\CCPOS\WineBarSSDBackUp\bin\Debug\WineBarSSDBackUp.exe
+C:\Users\TheWineBar\Documents\GitHub\CCPOS\CCPOS\WineBarSSDBackUp\bin\Debug\WineBarSSDBackUp.pdb
+C:\Users\TheWineBar\Documents\GitHub\CCPOS\CCPOS\WineBarSSDBackUp\obj\Debug\WineBarSSDBackUp.csprojAssemblyReference.cache
+C:\Users\TheWineBar\Documents\GitHub\CCPOS\CCPOS\WineBarSSDBackUp\obj\Debug\WineBarSSDBackUp.csproj.CoreCompileInputs.cache
+C:\Users\TheWineBar\Documents\GitHub\CCPOS\CCPOS\WineBarSSDBackUp\obj\Debug\WineBarSSDBackUp.exe
+C:\Users\TheWineBar\Documents\GitHub\CCPOS\CCPOS\WineBarSSDBackUp\obj\Debug\WineBarSSDBackUp.pdb

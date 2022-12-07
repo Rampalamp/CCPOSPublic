@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="19.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SaleInvoice" DisplayName="Sale Invoice" Margins="90, 90, 100, 100" PageWidth="850" PageHeight="1100" Version="19.2" DataSource="#Ref-0" Font="Arial, 9.75pt">
+  <Extensions>
+    <Item1 Ref="2" Key="DataSerializationExtension" Value="XtraReport" />
+    <Item2 Ref="3" Key="DataEditorExtension" Value="XtraReport" />
+    <Item3 Ref="4" Key="ParameterEditorExtension" Value="XtraReport" />
+  </Extensions>
+  <Bands>
+    <Item1 Ref="5" ControlType="DetailBand" Name="Detail" HeightF="52.00002" KeepTogether="true" TextAlignment="TopLeft" StyleName="baseControlStyle" Padding="0,0,0,0,100">
+      <SortFields>
+        <Item1 Ref="6" FieldName="SaleLineItems.Oid" />
+      </SortFields>
+      <Controls>
+        <Item1 Ref="7" ControlType="XRTable" Name="headerTable" AnchorHorizontal="Right" SizeF="629.9951,35.00002" LocationFloat="20, 10" Font="Segoe UI, 9.75pt, style=Bold" Padding="0,0,5,0,100" BorderColor="255,121,121,121" Borders="Bottom" BorderWidth="3">
+          <Rows>
+            <Item1 Ref="8" ControlType="XRTableRow" Name="headerTableRow" Weight="11.5">
+              <Cells>
+                <Item1 Ref="9" ControlType="XRTableCell" Name="quantityCaption" Weight="0.19686837340925539" Text="Qty" TextAlignment="TopLeft">
+                  <StylePriority Ref="10" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="11" ControlType="XRTableCell" Name="productNameCaption" Weight="0.89607243865251418" Text="Description" Padding="10,0,5,0,100">
+                  <StylePriority Ref="12" UsePadding="false" />
+                </Item2>
+                <Item3 Ref="13" ControlType="XRTableCell" Name="tableCell1" Weight="0.32071993169734281" Multiline="true" Text="Vintage" TextAlignment="TopRight">
+                  <StylePriority Ref="14" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="15" ControlType="XRTableCell" Name="unitPriceCaption" Weight="0.33279557918171609" Text="Price" TextAlignment="TopRight">
+                  <StylePriority Ref="16" UseTextAlignment="false" />
+                </Item4>
+                <Item5 Ref="17" ControlType="XRTableCell" Name="lineTotalCaption" Weight="0.53225441075819235" Text="LineTotal " TextAlignment="TopRight">
+                  <StylePriority Ref="18" UseTextAlignment="false" />
+                </Item5>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="19" UseFont="false" UsePadding="false" UseBorderColor="false" UseBorders="false" UseBorderWidth="false" />
+        </Item1>
+      </Controls>
+    </Item1>
+    <Item2 Ref="20" ControlType="TopMarginBand" Name="TopMargin" TextAlignment="TopLeft" Padding="0,0,0,0,100">
+      <StylePriority Ref="21" UseBackColor="false" />
+    </Item2>
+    <Item3 Ref="22" ControlType="BottomMarginBand" Name="BottomMargin" TextAlignment="TopLeft" Padding="0,0,0,0,100">
+      <Controls>
+        <Item1 Ref="23" ControlType="XRTable" Name="vendorContactsTable" AnchorHorizontal="Both" SizeF="630.0003,25" LocationFloat="19.99999, 18.00005" Font="Segoe UI, 8.25pt" Padding="2,2,0,0,100" BorderColor="Gray">
+          <Rows>
+            <Item1 Ref="24" ControlType="XRTableRow" Name="vendorContactsRow" Weight="1">
+              <Cells>
+                <Item1 Ref="25" ControlType="XRTableCell" Name="vendorWebsite" Weight="1" CanShrink="true" Text="TheWineBarOakville.com" TextAlignment="MiddleLeft">
+                  <StylePriority Ref="26" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="27" ControlType="XRTableCell" Name="vendorEmail" Weight="1" CanShrink="true" Text="info@thewinebaroakville.com" TextAlignment="MiddleCenter">
+                  <StylePriority Ref="28" UseBorders="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="29" ControlType="XRTableCell" Name="vendorPhone" Weight="1" CanShrink="true" Text="777-777-7777" TextAlignment="MiddleRight">
+                  <StylePriority Ref="30" UseBorders="false" UseTextAlignment="false" />
+                </Item3>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="31" UseFont="false" UsePadding="false" UseBorderColor="false" />
+        </Item1>
+        <Item2 Ref="32" ControlType="XRLine" Name="xrLine1" LineWidth="2" AnchorHorizontal="Both" SizeF="669.6851,10" LocationFloat="0, 0" ForeColor="255,198,198,198">
+          <StylePriority Ref="33" UseForeColor="false" />
+        </Item2>
+      </Controls>
+    </Item3>
+    <Item4 Ref="34" ControlType="GroupHeaderBand" Name="GroupHeader1" GroupUnion="WithFirstDetail" HeightF="213.833313" StyleName="baseControlStyle">
+      <SubBands>
+        <Item1 Ref="35" ControlType="SubBand" Name="SubBand1" HeightF="95.0000153" KeepTogether="true">
+          <Controls>
+            <Item1 Ref="36" ControlType="XRTable" Name="invoiceNumberTable" SizeF="160.4584,40" LocationFloat="20, 55">
+              <Rows>
+                <Item1 Ref="37" ControlType="XRTableRow" Name="invoiceNumberCaptionRow" Weight="0.26666666666666672" Font="Segoe UI, 9.75pt, style=Bold">
+                  <Cells>
+                    <Item1 Ref="38" ControlType="XRTableCell" Name="invoiceNumberCaption" Weight="1.0235326443596697" CanShrink="true" Text="Invoice No." TextAlignment="TopLeft">
+                      <StylePriority Ref="39" UseTextAlignment="false" />
+                    </Item1>
+                  </Cells>
+                  <StylePriority Ref="40" UseFont="false" />
+                </Item1>
+                <Item2 Ref="41" ControlType="XRTableRow" Name="invoiceNumberRow" Weight="0.26666666666666666">
+                  <Cells>
+                    <Item1 Ref="42" ControlType="XRTableCell" Name="invoiceNumber" Weight="1.0235326443596697" Text="[SaleNumber.Number]" TextAlignment="TopLeft">
+                      <StylePriority Ref="43" UseFont="false" UseTextAlignment="false" />
+                    </Item1>
+                  </Cells>
+                </Item2>
+              </Rows>
+            </Item1>
+            <Item2 Ref="44" ControlType="XRLabel" Name="invoiceLabel" Text="Invoice" TextAlignment="BottomLeft" SizeF="157.29,45" LocationFloat="20, 0" Font="Segoe UI, 24pt, style=Bold">
+              <StylePriority Ref="45" UseFont="false" UsePadding="false" UseTextAlignment="false" />
+            </Item2>
+          </Controls>
+        </Item1>
+      </SubBands>
+      <GroupFields>
+        <Item1 Ref="46" FieldName="DateCreated" />
+      </GroupFields>
+      <Controls>
+        <Item1 Ref="47" ControlType="XRLabel" Name="invoiceDate" TextFormatString="{0:d MMMM yyyy}" AnchorHorizontal="Right" TextAlignment="TopRight" SizeF="250,22.99998" LocationFloat="399.995117, 185" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="48" EventName="BeforePrint" PropertyName="Text" Expression="[DateCreated]" />
+          </ExpressionBindings>
+          <StylePriority Ref="49" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="50" ControlType="XRPictureBox" Name="vendorLogo" ImageUrl="C:\Users\Pantaloonz\Documents\GitHub\CCPOS\CCPOS\CCPOS.Module.Win\TheWineBarSplash.PNG" Sizing="Squeeze" ImageAlignment="TopRight" AnchorHorizontal="Right" SizeF="250,60" LocationFloat="399.995117, 110">
+          <StylePriority Ref="51" UsePadding="false" UseBorderColor="false" UseBorders="false" />
+        </Item2>
+        <Item3 Ref="52" ControlType="XRTable" Name="vendorTable" AnchorHorizontal="Right" TextAlignment="TopRight" SizeF="250,80" LocationFloat="399.9951, 19.99999" Font="Segoe UI, 8.25pt">
+          <Rows>
+            <Item1 Ref="53" ControlType="XRTableRow" Name="vendorNameRow" Weight="0.8">
+              <Cells>
+                <Item1 Ref="54" ControlType="XRTableCell" Name="vendorName" Weight="1" CanShrink="true" Text="TheWineBar">
+                  <StylePriority Ref="55" UseFont="false" UsePadding="false" />
+                </Item1>
+              </Cells>
+            </Item1>
+            <Item2 Ref="56" ControlType="XRTableRow" Name="vendorAddressRow" Weight="0.8">
+              <Cells>
+                <Item1 Ref="57" ControlType="XRTableCell" Name="vendorAddress" Weight="1" CanShrink="true" Text="100 Bronte Rd Unit 09">
+                  <StylePriority Ref="58" UseFont="false" />
+                </Item1>
+              </Cells>
+            </Item2>
+            <Item3 Ref="59" ControlType="XRTableRow" Name="vendorCityRow" Weight="0.8">
+              <Cells>
+                <Item1 Ref="60" ControlType="XRTableCell" Name="vendorCity" Weight="1" CanShrink="true" Text="Oakville">
+                  <StylePriority Ref="61" UseFont="false" />
+                </Item1>
+              </Cells>
+            </Item3>
+            <Item4 Ref="62" ControlType="XRTableRow" Name="vendorCountryRow" Weight="0.8">
+              <Cells>
+                <Item1 Ref="63" ControlType="XRTableCell" Name="vendorCountry" Weight="1" CanShrink="true" Text="Canada">
+                  <StylePriority Ref="64" UseFont="false" />
+                </Item1>
+              </Cells>
+            </Item4>
+          </Rows>
+          <StylePriority Ref="65" UseFont="false" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="66" ControlType="XRTable" Name="customerTable" SizeF="250,100" LocationFloat="20, 40">
+          <Rows>
+            <Item1 Ref="67" ControlType="XRTableRow" Name="customerNameRow" Weight="1">
+              <Cells>
+                <Item1 Ref="68" ControlType="XRTableCell" Name="customerName" Weight="1.1915477284685581" CanShrink="true" Font="Segoe UI, 12pt, style=Bold">
+                  <ExpressionBindings>
+                    <Item1 Ref="69" EventName="BeforePrint" PropertyName="Text" Expression="[Customer].[FullName]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="70" UseFont="false" UsePadding="false" />
+                </Item1>
+              </Cells>
+            </Item1>
+            <Item2 Ref="71" ControlType="XRTableRow" Name="customerAddressRow" Weight="1">
+              <Cells>
+                <Item1 Ref="72" ControlType="XRTableCell" Name="customerAddress" Weight="1.1915477284685581" CanShrink="true" Text="[Customer.Address.StreetAddress]" />
+              </Cells>
+            </Item2>
+            <Item3 Ref="73" ControlType="XRTableRow" Name="customerCityRow" Weight="1">
+              <Cells>
+                <Item1 Ref="74" ControlType="XRTableCell" Name="customerCity" Weight="1.1915477284685581" CanShrink="true" Text="[Customer.Address.City.Name]" />
+              </Cells>
+            </Item3>
+            <Item4 Ref="75" ControlType="XRTableRow" Name="customerCountryRow" Weight="1">
+              <Cells>
+                <Item1 Ref="76" ControlType="XRTableCell" Name="customerCountry" Weight="1.1915477284685581" CanShrink="true" Text="[Customer.Address.BOCountry.Name]" />
+              </Cells>
+            </Item4>
+          </Rows>
+        </Item4>
+      </Controls>
+      <StylePriority Ref="77" UseBackColor="false" />
+    </Item4>
+    <Item5 Ref="78" ControlType="GroupFooterBand" Name="GroupFooter1" GroupUnion="WithLastDetail" PageBreak="AfterBandExceptLastEntry" HeightF="209.166672" KeepTogether="true" StyleName="baseControlStyle">
+      <Controls>
+        <Item1 Ref="79" ControlType="XRLabel" Name="label1" Multiline="true" Text="Thank you for your business!" TextAlignment="TopCenter" SizeF="669.685059,23.833313" LocationFloat="0.314966828, 175.333359" Font="Segoe UI, 12pt" Padding="2,2,0,0,100">
+          <StylePriority Ref="80" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="81" ControlType="XRTable" Name="table3" AnchorHorizontal="Right" SizeF="629.9951,19.166666" LocationFloat="20.005188, 35.3333549" Font="Segoe UI, 9.75pt, style=Bold" ForeColor="Black" Padding="2,2,5,0,100" BorderColor="255,198,198,198" Borders="Top">
+          <Rows>
+            <Item1 Ref="82" ControlType="XRTableRow" Name="tableRow3" Weight="1.5217391304347823" Font="Segoe UI, 14.25pt, style=Bold" BorderColor="255,121,121,121" BorderWidth="3">
+              <Cells>
+                <Item1 Ref="83" ControlType="XRTableCell" Name="tableCell5" Weight="8.7902185065429119" Text="Tax(13%)" TextAlignment="BottomLeft" Font="Segoe UI, 10pt, style=Bold">
+                  <StylePriority Ref="84" UseFont="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="85" ControlType="XRTableCell" Name="tableCell6" Weight="3.8676777123409511" TextFormatString="{0:$0.00}" TextAlignment="BottomRight" Font="Segoe UI, 10pt, style=Bold">
+                  <ExpressionBindings>
+                    <Item1 Ref="86" EventName="BeforePrint" PropertyName="Text" Expression="[SaleLineItems].[Sale].[Tax]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="87" UseFont="false" UseTextAlignment="false" />
+                </Item2>
+              </Cells>
+              <StylePriority Ref="88" UseFont="false" UseBorderColor="false" UseBorderWidth="false" />
+            </Item1>
+          </Rows>
+          <StylePriority Ref="89" UseFont="false" UseForeColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" />
+        </Item2>
+        <Item3 Ref="90" ControlType="XRTable" Name="table2" AnchorHorizontal="Right" SizeF="629.9951,19.166666" LocationFloat="20, 16.166687" Font="Segoe UI, 9.75pt, style=Bold" ForeColor="Black" Padding="2,2,5,0,100" BorderColor="255,198,198,198" Borders="Top">
+          <Rows>
+            <Item1 Ref="91" ControlType="XRTableRow" Name="tableRow2" Weight="1.5217391304347823" Font="Segoe UI, 14.25pt, style=Bold" BorderColor="255,121,121,121" BorderWidth="3">
+              <Cells>
+                <Item1 Ref="92" ControlType="XRTableCell" Name="tableCell3" Weight="8.7902185065429119" Text="SubTotal" TextAlignment="BottomLeft" Font="Segoe UI, 10pt, style=Bold">
+                  <StylePriority Ref="93" UseFont="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="94" ControlType="XRTableCell" Name="tableCell4" Weight="3.8676777123409511" TextFormatString="{0:$0.00}" TextAlignment="BottomRight" Font="Segoe UI, 10pt, style=Bold">
+                  <ExpressionBindings>
+                    <Item1 Ref="95" EventName="BeforePrint" PropertyName="Text" Expression="[SaleLineItems].[Sale].[SubTotal]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="96" UseFont="false" UseTextAlignment="false" />
+                </Item2>
+              </Cells>
+              <StylePriority Ref="97" UseFont="false" UseBorderColor="false" UseBorderWidth="false" />
+            </Item1>
+          </Rows>
+          <StylePriority Ref="98" UseFont="false" UseForeColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" />
+        </Item3>
+        <Item4 Ref="99" ControlType="XRTable" Name="totalTable" AnchorHorizontal="Right" SizeF="629.9951,22.5000038" LocationFloat="20, 54.50002" Font="Segoe UI, 9.75pt, style=Bold" ForeColor="Black" Padding="2,2,5,0,100" BorderColor="255,198,198,198" Borders="Top">
+          <Rows>
+            <Item1 Ref="100" ControlType="XRTableRow" Name="totalRow" Weight="1.5217391304347823" Font="Segoe UI, 14.25pt, style=Bold" BorderColor="255,121,121,121" BorderWidth="3">
+              <Cells>
+                <Item1 Ref="101" ControlType="XRTableCell" Name="totalCaption" Weight="8.6147287225629015" Text="Total" TextAlignment="BottomLeft" Font="Segoe UI, 12pt, style=Bold">
+                  <StylePriority Ref="102" UseFont="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="103" ControlType="XRTableCell" Name="total" Weight="3.7904626522673168" TextFormatString="{0:$0.00}" TextAlignment="BottomRight" Font="Segoe UI, 12pt, style=Bold">
+                  <ExpressionBindings>
+                    <Item1 Ref="104" EventName="BeforePrint" PropertyName="Text" Expression="[SaleLineItems].[Sale].[Total]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="105" UseFont="false" UseTextAlignment="false" />
+                </Item2>
+              </Cells>
+              <StylePriority Ref="106" UseFont="false" UseBorderColor="false" UseBorderWidth="false" />
+            </Item1>
+          </Rows>
+          <StylePriority Ref="107" UseFont="false" UseForeColor="false" UsePadding="false" UseBorderColor="false" UseBorders="false" />
+        </Item4>
+      </Controls>
+    </Item5>
+    <Item6 Ref="108" ControlType="DetailReportBand" Name="DetailReport" Level="0" DataMember="SaleLineItems" DataSource="#Ref-0">
+      <Bands>
+        <Item1 Ref="109" ControlType="DetailBand" Name="Detail1" HeightF="55.8333321">
+          <Controls>
+            <Item1 Ref="110" ControlType="XRTable" Name="table1" ProcessHiddenCellMode="ResizeCellsEqually" SizeF="629.9951,20" LocationFloat="20, 10" OddStyleName="baseControlStyle" Padding="2,2,0,0,96">
+              <Rows>
+                <Item1 Ref="111" ControlType="XRTableRow" Name="tableRow1" Weight="6.8999999999999995">
+                  <Cells>
+                    <Item1 Ref="112" ControlType="XRTableCell" Name="tableCell2" Weight="0.25410178652239768" TextFormatString="{0:n}" Multiline="true" Text="tableCell2" TextAlignment="TopLeft">
+                      <ExpressionBindings>
+                        <Item1 Ref="113" EventName="BeforePrint" PropertyName="Text" Expression="[Quantity]" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="114" UseTextAlignment="false" />
+                    </Item1>
+                    <Item2 Ref="115" ControlType="XRTableCell" Name="tableCell7" Weight="1.1565781971758529" Multiline="true" Text="tableCell7" SnapLineMargin="3,0,0,0,100" TextAlignment="TopLeft">
+                      <ExpressionBindings>
+                        <Item1 Ref="116" EventName="BeforePrint" PropertyName="Text" Expression="[Product].[Name]" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="117" UseTextAlignment="false" />
+                    </Item2>
+                    <Item3 Ref="118" ControlType="XRTableCell" Name="tableCell8" Weight="0.40308074504229585" Multiline="true" Text="tableCell8" TextAlignment="TopRight">
+                      <ExpressionBindings>
+                        <Item1 Ref="119" EventName="BeforePrint" PropertyName="Text" Expression="[Product].[Year]" />
+                      </ExpressionBindings>
+                    </Item3>
+                    <Item4 Ref="120" ControlType="XRTableCell" Name="tableCell9" Weight="0.44042449334685646" TextFormatString="{0:$0.00}" Multiline="true" Text="tableCell9" TextAlignment="TopRight">
+                      <ExpressionBindings>
+                        <Item1 Ref="121" EventName="BeforePrint" PropertyName="Text" Expression="[SalePrice]" />
+                      </ExpressionBindings>
+                    </Item4>
+                    <Item5 Ref="122" ControlType="XRTableCell" Name="tableCell10" Weight="0.68699124850083271" TextFormatString="{0:$0.00}" Multiline="true" Text="tableCell10" TextAlignment="TopRight">
+                      <ExpressionBindings>
+                        <Item1 Ref="123" EventName="BeforePrint" PropertyName="Text" Expression="[Total]" />
+                      </ExpressionBindings>
+                    </Item5>
+                  </Cells>
+                </Item1>
+              </Rows>
+            </Item1>
+          </Controls>
+        </Item1>
+      </Bands>
+    </Item6>
+  </Bands>
+  <StyleSheet>
+    <Item1 Ref="124" Name="baseControlStyle" BorderStyle="Inset" Padding="2,2,0,0,100" Font="Segoe UI, 9.75pt" StringFormat="Near;Near;0;None;Character;Default" />
+  </StyleSheet>
+  <ComponentStorage>
+    <Item1 Ref="0" Name="collectionDataSource1" ObjectTypeName="CCPOS.Module.BusinessObjects.Sales.Sale" ObjectType="DevExpress.Persistent.Base.ReportsV2.CollectionDataSource,DevExpress.Persistent.Base.v19.2" TopReturnedRecords="0">
+      <Sorting Ref="125" />
+    </Item1>
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>
